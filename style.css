@@ -2,28 +2,79 @@
 Theme Name: Custom Theme 025
 Description: A custom theme that was developed during my WordPress Class #25
 Author: Enno Hyttrek
-Version: 1.0
+Version: 1.1
 */
 
-body {
-    background: hsl(200,13%,55%);
+/*-------------
+VARIABLES
+-------------*/
+
+
+/**--------
+Standard Colors
+--------**/
+:root {
+    --base-color: 200;
+    --primary-color: hsl(var(--base-color), 76%, 55%);
+    --type-color: hsl(var(--base-color), 8%, 13%);
 }
 
-h1 {
-    color: red;
+
+/*-------------
+RESET
+-------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h2 {
-    font-family: Arial, sans-serif;
-}
+
+/*-------------
+LAYOUT
+-------------*/
 
 
 main {
     min-height: 70vh;
 }
 
+
+/*-------------
+NAVIGATION
+-------------*/
+
+.main-nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.main-nav > ul > li {
+    margin-right: 1em;
+}
+
+
+/*-------------
+TYPOGRAPHY
+-------------*/
+
+
+/*-------------
+COLOR
+-------------*/
+
+body {
+    background: hsl(var(--base-color),13%,55%);
+}
+
+body, a {
+    color: var(--type-color);
+}
+
 header {
-    background: blue;
+    background: var(--primary-color);
 }
 
 main {
