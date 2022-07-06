@@ -45,6 +45,7 @@ main {
     min-height: 70vh;
 }
 
+
 .more-link,
 figure,
 h1,
@@ -113,4 +114,21 @@ header {
 
 main {
     background: #fff;
+}
+
+
+/*-------------
+RESPONSIVE
+-------------*/
+
+
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        background: red;
+    }
+
+
+
 }
