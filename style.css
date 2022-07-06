@@ -45,6 +45,11 @@ main {
     min-height: 70vh;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .more-link,
 figure,
@@ -126,9 +131,28 @@ RESPONSIVE
 @media only screen and (min-width: 600px) {
 
     main {
-        background: red;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    article {
+        width: 33.33%;
+    }
+    
+    h2 {
+        font-size: 1.3em;
     }
 
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
