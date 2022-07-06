@@ -1,17 +1,19 @@
 <?php get_header(); ?>
 <header>
-    <div class="wrapper header-wrapper">
-    <h1><?php bloginfo('title'); ?></h1>
-        </div>
+    <div class="container header-container">
+        <h1><?php bloginfo('title'); ?></h1>
+    </div>
 </header>
 
 <?php wp_nav_menu( array( 
         'theme_location' => 'main-menu',
         'container' => 'nav',
         'container_class'   => "main-nav",
-        'container_id'      => "main-nav" ) ); ?>
-<div>
-    <main class="wrapper main-wrapper">
+        'container_id'      => "main-nav" ) ); 
+?>
+
+<div class="wrapper main-wrapper">
+    <main>
         <?php 
 if ( have_posts() ) : 
     while ( have_posts() ) : the_post(); ?>
