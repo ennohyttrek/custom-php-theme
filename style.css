@@ -40,6 +40,24 @@ main {
     min-height: 70vh;
 }
 
+.more-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    padding: 1rem 20px;
+}
+
+p {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
 
 /*-------------
 NAVIGATION
@@ -49,11 +67,15 @@ NAVIGATION
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .main-nav > ul > li {
     margin-right: 1em;
+    padding: 0.3em 0;
 }
+
 
 
 /*-------------
@@ -66,10 +88,11 @@ COLOR
 -------------*/
 
 body {
-    background: hsl(var(--base-color),13%,55%);
+    background: hsl(var(--base-color), 13%, 55%);
 }
 
-body, a {
+body,
+a {
     color: var(--type-color);
 }
 
